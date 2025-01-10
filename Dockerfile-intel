@@ -1,0 +1,9 @@
+FROM python:3.12-slim-bookworm
+LABEL maintainer="sinfallas@gmail.com"
+LABEL build_date="2025-01-10"
+WORKDIR /app
+RUN apt update -qq && apt -y dist-upgrade && apt -y install --no-install-recommends --no-install-suggests curl git && apt clean && apt -y autoremove && rm -rf /var/lib/{apt,dpkg,cache,log} && rm -rf /var/cache/* && rm -rf /var/log/apt/* && rm -rf /tmp/*
+RUN git clone https://github.com/comfyanonymous/ComfyUI.git .
+RUN pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/xpu
+RUN pip install -r requirements.txt
+CMD ["python","main.py"]
