@@ -5,6 +5,7 @@ services:
     hostname: comfyui
     privileged: true
     pull_policy: always
+    restart: unless-stopped
     runtime: nvidia
     tty: true
     ulimits:
@@ -12,7 +13,6 @@ services:
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility,video
-    restart: unless-stopped
     deploy:
       resources:
         reservations:
@@ -23,6 +23,22 @@ services:
     ports:
       - 8188:8188
     volumes:
-      - ./app:/app
-
-
+      - ./checkpoints:/app/models/checkpoints
+      - ./clip:/app/models/clip
+      - ./clip_vision:/app/models/clip_vision
+      - ./configs:/app/models/configs
+      - ./controlnet:/app/models/controlnet
+      - ./diffusers:/app/models/diffusers
+      - ./diffusion_models:/app/models/diffusion_models
+      - ./embeddings:/app/models/embeddings
+      - ./gligen:/app/models/gligen
+      - ./hypernetworks:/app/models/hypernetworks
+      - ./loras:/app/models/loras
+      - ./photomaker:/app/models/photomaker
+      - ./style_models:/app/models/style_models
+      - ./text_encoders:/app/models/text_encoders
+      - ./unet:/app/models/unet
+      - ./upscale_models:/app/models/upscale_models
+      - ./vae:/app/models/vae
+      - ./vae_approx:/app/models/vae_approx
+      - ./output:/app/output
