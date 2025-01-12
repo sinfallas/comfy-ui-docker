@@ -1,0 +1,53 @@
+commit d4441f3faa2a734371136131913e0d3b65b283a0 (HEAD -> main, origin/main, origin/HEAD)
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sun Jan 12 15:40:12 2025 -0400
+
+    * cmd
+
+commit cacef007bec0ab2490bd6eae74a17fbc7a5fd9d5
+Author: Jesús Palencia <sinfallas@yahoo.com>
+Date:   Fri Jan 10 10:36:28 2025 -0400
+
+    Create Dockerfile-intel
+
+commit cd3e60c82b7f8702e57282ca9d7eec3513693084
+Author: Jesús Palencia <sinfallas@yahoo.com>
+Date:   Fri Jan 10 10:28:28 2025 -0400
+
+    Update README.md
+
+commit 686f8293bfba88577732e106ae9e06495416155f
+Author: Jesús Palencia <sinfallas@yahoo.com>
+Date:   Fri Jan 10 10:27:24 2025 -0400
+
+    Create LICENSE
+
+commit 9047e405e0af37e5afc24ac6b420fca91baaef6e
+Author: Jesús Palencia <sinfallas@yahoo.com>
+Date:   Fri Jan 10 10:26:29 2025 -0400
+
+    Create COPYING
+
+commit fe4b6dbbf84fc9e950ac419c19f1fc0bf5abf5b7
+Author: Jesús Palencia <sinfallas@yahoo.com>
+Date:   Fri Jan 10 10:26:03 2025 -0400
+
+    Create AUTHORS
+
+commit 06a86c08587717796cfe91d2701f264ba43c47af
+Author: Jesús Palencia <sinfallas@yahoo.com>
+Date:   Fri Jan 10 10:24:40 2025 -0400
+
+    Create Dockerfile-amd
+
+commit d51fad6718b8c2889ed1a1b2522afd1f6ec43d51
+Author: Jesús Palencia <sinfallas@yahoo.com>
+Date:   Fri Jan 10 10:24:04 2025 -0400
+
+    Create Dockerfile-nvidia
+
+commit 9ff1fd7b4277291d0064bb9ba5c4a4c24e850a79
+Author: Jesús Palencia <sinfallas@yahoo.com>
+Date:   Fri Jan 10 10:22:15 2025 -0400
+
+    Create README.md
