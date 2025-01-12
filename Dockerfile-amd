@@ -6,4 +6,5 @@ RUN apt update -qq && apt -y dist-upgrade && apt -y install --no-install-recomme
 RUN git clone https://github.com/comfyanonymous/ComfyUI.git .
 RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.2
 RUN pip install -r requirements.txt
-CMD ["python","main.py"]
+EXPOSE 8188
+CMD ["python","main.py","--listen","0.0.0.0","--front-end-version","Comfy-Org/ComfyUI_frontend@latest"]

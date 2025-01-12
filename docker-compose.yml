@@ -1,0 +1,28 @@
+services:
+  comfyui:
+    image: sinfallas/comfyui:0.3.10-nvidia
+    container_name: comfyui
+    hostname: comfyui
+    privileged: true
+    pull_policy: always
+    runtime: nvidia
+    tty: true
+    ulimits:
+      memlock: -1
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility,video
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    ports:
+      - 8188:8188
+    volumes:
+      - ./app:/app
+
+
