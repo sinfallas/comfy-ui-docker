@@ -42,3 +42,4 @@ services:
       - ./vae:/app/models/vae
       - ./vae_approx:/app/models/vae_approx
       - ./output:/app/output
+      - ./custom_nodes:/app/custom_nodes
