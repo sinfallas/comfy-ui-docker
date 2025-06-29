@@ -1,10 +1,34 @@
-commit 14f51a05f1d7e1d1cd28ca7d0e48c0842db329a6 (HEAD -> main, origin/main, origin/HEAD)
+commit 78035d994f0d1a3d32b78928cb5a6c2e6e1ee7a9 (HEAD -> main, origin/main, origin/HEAD)
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sun Jun 29 11:59:55 2025 -0400
+
+    * mejoras
+
+commit 7b673e7c2b11203365630b710e44165b24e60fcb
+Author: Jesús Palencia <sinfallas@yahoo.com>
+Date:   Thu Jan 16 11:11:37 2025 -0400
+
+    Update docker-compose.yml
+
+commit 87f35e76e42a9207adbfc3e177dcb43e1207f7d9
+Author: Jesús Palencia <sinfallas@yahoo.com>
+Date:   Thu Jan 16 10:56:22 2025 -0400
+
+    Update docker-compose.yml
+
+commit b2738198f6771933344d9699e53d189f0666a887
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sun Jan 12 16:46:29 2025 -0400
+
+    * changelog
+
+commit 14f51a05f1d7e1d1cd28ca7d0e48c0842db329a6
 Author: Jesus Palencia <sinfallas@gmail.com>
 Date:   Sun Jan 12 16:46:20 2025 -0400
 
     * readme
 
-commit 995c144171370492dfb4e3035bde6b694282752a
+commit 995c144171370492dfb4e3035bde6b694282752a (tag: v1.0)
 Author: Jesus Palencia <sinfallas@gmail.com>
 Date:   Sun Jan 12 16:20:12 2025 -0400
 
