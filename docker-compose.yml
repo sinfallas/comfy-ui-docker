@@ -1,6 +1,6 @@
 services:
   comfyui:
-    image: sinfallas/comfyui:0.3.10-nvidia
+    image: sinfallas/comfyui:0.3.43-nvidia
     container_name: comfyui
     hostname: comfyui
     privileged: true
@@ -11,6 +11,8 @@ services:
     ulimits:
       memlock: -1
     environment:
+      - PUID=1000
+      - PGID=1000
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility,video
     deploy:
@@ -42,4 +44,4 @@ services:
       - ./vae:/app/models/vae
       - ./vae_approx:/app/models/vae_approx
       - ./output:/app/output
-      #- ./custom_nodes:/app/custom_nodes
+      - ./custom_nodes:/app/custom_nodes
