@@ -10,3 +10,6 @@ Get this image on:
 ComfyUI git:
 * https://github.com/comfyanonymous/ComfyUI
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=sinfallas/comfy-ui-docker&type=Date)](https://www.star-history.com/#sinfallas/comfy-ui-docker&Date)
