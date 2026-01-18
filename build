@@ -10,11 +10,11 @@ fi
 clear
 
 docker build -t comfyuii -f Dockerfile-intel .
-docker image tag comfyuii sinfallas/comfyui:0.8.2-intel && docker image push sinfallas/comfyui:0.8.2-intel
+docker image tag comfyuii sinfallas/comfyui:0.9.2-intel && docker image push sinfallas/comfyui:0.9.2-intel
 docker build -t comfyuin -f Dockerfile-nvidia .
-docker image tag comfyuin sinfallas/comfyui:0.8.2-nvidia && docker image push sinfallas/comfyui:0.8.2-nvidia
+docker image tag comfyuin sinfallas/comfyui:0.9.2-nvidia && docker image push sinfallas/comfyui:0.9.2-nvidia
 docker build -t comfyuia -f Dockerfile-amd .
-docker image tag comfyuia sinfallas/comfyui:0.8.2-amd && docker image push sinfallas/comfyui:0.8.2-amd
+docker image tag comfyuia sinfallas/comfyui:0.9.2-amd && docker image push sinfallas/comfyui:0.9.2-amd
 docker system prune -af
 
 echo "finalizado..."
