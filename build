@@ -9,13 +9,25 @@ fi
 
 clear
 
-docker build -t comfyuii -f Dockerfile-intel .
-docker image tag comfyuii sinfallas/comfyui:0.9.2-intel && docker image push sinfallas/comfyui:0.9.2-intel
-docker build -t comfyuin -f Dockerfile-nvidia .
-docker image tag comfyuin sinfallas/comfyui:0.9.2-nvidia && docker image push sinfallas/comfyui:0.9.2-nvidia
+##### amd
 docker build -t comfyuia -f Dockerfile-amd .
-docker image tag comfyuia sinfallas/comfyui:0.9.2-amd && docker image push sinfallas/comfyui:0.9.2-amd
-#docker system prune -af
+docker image tag comfyuia sinfallas/comfyui:0.18.2-amd && docker image push sinfallas/comfyui:0.18.2-amd
+##### amd-RDNA3
+docker build -t comfyuia-rdna3 -f Dockerfile-amd-RDNA3 .
+docker image tag comfyuia-rdna3 sinfallas/comfyui:0.18.2-amd-rdna3 && docker image push sinfallas/comfyui:0.18.2-amd-rdna3
+##### amd-RDNA3.5
+docker build -t comfyuia-rdna35 -f Dockerfile-amd-RDNA35 .
+docker image tag comfyuia-rdna35 sinfallas/comfyui:0.18.2-amd-rdna35 && docker image push sinfallas/comfyui:0.18.2-amd-rdna35
+##### amd-RDNA4
+docker build -t comfyuia-rdna4 -f Dockerfile-amd-RDNA4 .
+docker image tag comfyuia-rdna4 sinfallas/comfyui:0.18.2-amd-rdna4 && docker image push sinfallas/comfyui:0.18.2-amd-rdna4
+##### intel
+docker build -t comfyuii -f Dockerfile-intel .
+docker image tag comfyuii sinfallas/comfyui:0.18.2-intel && docker image push sinfallas/comfyui:0.18.2-intel
+##### nvidia
+docker build -t comfyuin -f Dockerfile-nvidia .
+docker image tag comfyuin sinfallas/comfyui:0.18.2-nvidia && docker image push sinfallas/comfyui:0.18.2-nvidia
+docker system prune -af
 
 echo "finalizado..."
 exit 0
