@@ -6,7 +6,7 @@ ENV UV_SYSTEM_PYTHON=1
 WORKDIR /app
 RUN apt update -qq && apt -y dist-upgrade && apt -y install --no-install-recommends --no-install-suggests curl git && apt clean && apt -y autoremove && rm -rf /var/lib/{apt,dpkg,cache,log} && rm -rf /var/cache/* && rm -rf /var/log/apt/* && rm -rf /tmp/*
 RUN git clone https://github.com/comfyanonymous/ComfyUI.git .
-RUN uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm7.1
+RUN uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm7.2
 RUN uv pip install -r requirements.txt
 RUN uv pip install -r manager_requirements.txt
 EXPOSE 8188
