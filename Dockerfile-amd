@@ -1,6 +1,5 @@
-FROM sinfallas/base-python-uv:3.12
-LABEL maintainer="sinfallas@gmail.com"
-LABEL build_date="2026-02-28"
+FROM sinfallas/base-python-uv:3.13
+LABEL maintainer="Jesus Palencia sinfallas@gmail.com"
 ENV DEBIAN_FRONTEND=noninteractive
 ENV UV_SYSTEM_PYTHON=1
 WORKDIR /app
@@ -10,4 +9,4 @@ RUN uv pip install torch torchvision torchaudio --index-url https://download.pyt
 RUN uv pip install -r requirements.txt
 RUN uv pip install -r manager_requirements.txt
 EXPOSE 8188
-CMD ["python","main.py","--listen","0.0.0.0","--front-end-version","Comfy-Org/ComfyUI_frontend@latest"]
+CMD ["python","main.py","--listen","0.0.0.0","--front-end-version","--enable-manager","Comfy-Org/ComfyUI_frontend@latest"]
