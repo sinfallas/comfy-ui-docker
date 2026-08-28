@@ -1,4 +1,60 @@
-* commit d6c0dacd5fd862faa7fa10b4a1e0cd7799a4dedf (HEAD -> main, origin/main, origin/HEAD)
+* commit 59758043c483b218626339dfdf93f0778a2663df (HEAD -> main, origin/main, origin/HEAD)
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Thu Aug 27 22:38:56 2026 -0400
+| 
+|     * bugfix
+| 
+* commit ce81f5797e2ef2f6b91f6eae24312342087f5805 (tag: v1.2)
+| Author: Sinfallas <sinfallas@yahoo.com>
+| Date:   Mon Aug 24 11:37:01 2026 -0400
+| 
+|     Update README.md
+| 
+* commit e70b9d51c11ca14963d997b69a51680390e36b11
+| Author: Sinfallas <sinfallas@yahoo.com>
+| Date:   Mon Aug 24 10:55:08 2026 -0400
+| 
+|     Update base image and maintainer in Dockerfile
+| 
+* commit 762ba09c80a77594fcd1fc580242c21f3906b6a9
+| Author: Sinfallas <sinfallas@yahoo.com>
+| Date:   Mon Aug 24 10:54:30 2026 -0400
+| 
+|     Update base image and maintainer in Dockerfile
+| 
+* commit f7e6aa570db970addfc5f898cb17e99f6fba5fb8
+| Author: Sinfallas <sinfallas@yahoo.com>
+| Date:   Mon Aug 24 10:53:50 2026 -0400
+| 
+|     Update base image and CMD in Dockerfile
+| 
+* commit e13de9fc95efc3120e3a88b4d911b327038930af
+| Author: Sinfallas <sinfallas@yahoo.com>
+| Date:   Mon Aug 24 10:53:05 2026 -0400
+| 
+|     Update base image and CMD in Dockerfile
+| 
+* commit 41eefe4b08ef525067365d8f067797cde4dff006
+| Author: Sinfallas <sinfallas@yahoo.com>
+| Date:   Mon Aug 24 10:51:52 2026 -0400
+| 
+|     Update Dockerfile base image and CMD options
+|     
+|     Updated base image version and maintainer information. Modified CMD to enable manager functionality.
+| 
+* commit a4f8ea70bc22f742bc9b71a1a751ac032cbaf8c7
+| Author: Sinfallas <sinfallas@yahoo.com>
+| Date:   Mon Aug 24 10:51:05 2026 -0400
+| 
+|     Update base image and maintainer in Dockerfile-amd
+| 
+* commit 4d09dbdc39547197c3f1afb1eaa533422462202e (tag: v1.1)
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Sun Jun 14 11:30:32 2026 -0400
+| 
+|     * changelog
+| 
+* commit d6c0dacd5fd862faa7fa10b4a1e0cd7799a4dedf
 | Author: Jesus Palencia <sinfallas@gmail.com>
 | Date:   Sun Jun 14 11:30:22 2026 -0400
 | 
