@@ -1,5 +1,5 @@
 FROM sinfallas/base-python-uv:3.13
-LABEL maintainer="Jesus Palencia sinfallas@gmail.com"
+LABEL org.opencontainers.image.authors="sinfallas@gmail.com"
 ENV DEBIAN_FRONTEND=noninteractive
 ENV UV_SYSTEM_PYTHON=1
 WORKDIR /app
@@ -10,3 +10,5 @@ RUN uv pip install -r requirements.txt
 RUN uv pip install -r manager_requirements.txt
 EXPOSE 8188
 CMD ["python","main.py","--listen","0.0.0.0","--front-end-version","--enable-manager","Comfy-Org/ComfyUI_frontend@latest"]
+ARG BUILD_DATE
+LABEL org.opencontainers.image.created=$BUILD_DATE
