@@ -3,11 +3,14 @@ LABEL org.opencontainers.image.authors="Jesus Palencia <sinfallas@gmail.com>"
 ENV DEBIAN_FRONTEND=noninteractive
 ENV UV_SYSTEM_PYTHON=1
 WORKDIR /app
-RUN apt update -qq && apt -y dist-upgrade && apt -y install --no-install-recommends --no-install-suggests curl git && apt clean && apt -y autoremove && rm -rf /var/lib/{apt,dpkg,cache,log} && rm -rf /var/cache/* && rm -rf /var/log/apt/* && rm -rf /tmp/*
+USER root
+RUN mkdir -p /var/lib/apt/lists/partial && apt update -qq && apt -y dist-upgrade && apt -y install --no-install-recommends --no-install-suggests curl git && apt clean && apt -y autoremove && rm -rf /var/lib/{apt,dpkg,cache,log} && rm -rf /var/cache/* && rm -rf /var/log/apt/* && rm -rf /tmp/*
 RUN git clone https://github.com/comfyanonymous/ComfyUI.git .
 RUN uv pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/xpu
 RUN uv pip install -r requirements.txt
 RUN uv pip install -r manager_requirements.txt
+RUN chown -R 1000:1000 /app
+USER 1000
 EXPOSE 8188
 CMD ["python","main.py","--listen","0.0.0.0","--front-end-version","--enable-manager","Comfy-Org/ComfyUI_frontend@latest"]
 ARG BUILD_DATE

@@ -29,4 +29,3 @@ docker build --build-arg BUILD_DATE=$CURRENT_DATE -t comfyuin -f Dockerfile-nvid
 docker image tag comfyuin sinfallas/comfyui:"$version"-nvidia && docker image push sinfallas/comfyui:"$version"-nvidia
 
 echo "finalizado..."
-exit 0
