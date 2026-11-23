@@ -1,6 +1,6 @@
 # unofficial comfy-ui docker image
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/sinfallas/comfy-ui-docker)
+ [![Descargas de Docker](https://img.shields.io/docker/pulls/sinfallas/comfyui?style=flat&logo=docker&color=blue)](https://hub.docker.com/r/sinfallas/comfyui)
 
 The TAG corresponds to the release version of comfy-ui and the GPU (nvidia,amd,intel)
 
